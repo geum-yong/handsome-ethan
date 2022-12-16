@@ -1,0 +1,9 @@
+{
+  "name": "simple_spa",
+  "version": "1.0.0",
+  "description": "create simple spa",
+  "main": "index.js",
+  "repository": "git@github.com:geum-yong/handsome-ethan.git",
+  "author": "geum-yong",
+  "license": "MIT"
+}
