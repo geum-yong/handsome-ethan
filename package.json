@@ -21,6 +21,6 @@
   },
   "lint-staged": {
     "**/*.{json,yaml,md}": "prettier --check",
-    "**/*.{js,html,css}": "eslint"
+    "**/*.{js}": "eslint"
   }
 }
