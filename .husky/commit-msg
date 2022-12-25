@@ -1,0 +1,11 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+FILE=$1
+MESSAGE=$(cat $FILE)
+TICKET=['#'$(git rev-parse --abbrev-ref HEAD | grep -o -m 1 '[0-9]*' | head -1)]
+if [[ $MESSAGE =~ ^[#[0-9]+] ]];then
+  exit 0;
+fi
+
+echo "$TICKET $MESSAGE" > $FILE
