@@ -22,4 +22,4 @@ jobs:
       - name: Prettier
         run: npx prettier --check "**/*.{json,yaml,md}"
       - name: Lint
-        run: npx eslint "**/*.{js,html,css}" --no-error-on-unmatched-pattern
+        run: npx eslint "**/*.{js}" --no-error-on-unmatched-pattern

@@ -14,13 +14,15 @@
     "eslint-plugin-prettier": "^4.2.1",
     "husky": "^8.0.0",
     "lint-staged": "13.1.0",
+    "nodemon": "2.0.20",
     "prettier": "2.8.1"
   },
   "scripts": {
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "dev": "nodemon server.js"
   },
   "lint-staged": {
     "**/*.{json,yaml,md}": "prettier --check",
-    "**/*.{js,html,css}": "eslint"
+    "**/*.{js}": "eslint"
   }
 }
