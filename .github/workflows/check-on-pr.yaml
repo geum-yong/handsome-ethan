@@ -18,7 +18,7 @@ jobs:
           key: npm-packages-${{ hashFiles('**/package-lock.json') }}
       - name: Install Dependencies
         if: steps.cache.outputs.cache-hit != 'true'
-        run: npm install
+        run: yarn install
       - name: Prettier
         run: npx prettier --check "**/*.{json,yaml,md}"
       - name: Lint
